@@ -1,11 +1,11 @@
 # fromIntelliJWizardForJavaFX
 
 Sample usage of JAVAFX directly from JavaFX project from intelliJ Wizard.
-
 Also shown maven test support.
-In the following all the steps if Yiu start from scratch.
 
-After creating javaFx App, to create tests, simoly:
+In the following You will find all the steps if You start from scratch inside IntelluJ choosing JavaFX project.
+
+After creating javaFx App, to create tests, simply:
 
 1) duplicate "main" folder
 2) change contents and files (initial file must be removed...)
