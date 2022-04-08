@@ -1,9 +1,12 @@
-# fromIntelliWizardForJavaFX
-sample usage of JAVAFX direct from JavaFX project from intelliJ Wizard.
+# fromIntelliJWizardForJavaFX
 
-we add maven test support.
+Sample usage of JAVAFX directly from JavaFX project from intelliJ Wizard.
 
-to create tests, simoly:
+Also shown maven test support.
+In the following all the steps if Yiu start from scratch.
+
+After creating javaFx App, to create tests, simoly:
+
 1) duplicate "main" folder
 2) change contents and files (initial file must be removed...)
 3) create tests form classes using intelliJ "generate"
@@ -24,11 +27,12 @@ in "build" section of POM.
 8) If You got:
   Unsupported class file major version 62
 
-You must lower maven-surefire-plugin version. Above we use 2.19.1:
+You must lower maven-surefire-plugin version.
+Use 2.19.1.
 
 <version>2.22.2</version> is NOT supported.
 
-9) NO support for shade Plugin for niw.
+9) NO support for shade Plugin for now.
 
 ---- sample test class:
 
@@ -37,18 +41,16 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class AppTest
 {
-/**
-* Rigorous Test :-)
-*/
-@Test
-public void shouldAnswerWithTrue()
-{
-assertTrue( true );
-}
-@Test
-public void shouldAnswerWithTrueAgain()
-{
-assertTrue( true );
+   @Test
+   public void shouldAnswerWithTrue()
+   {
+      assertTrue( true );
+   }
+
+   @Test
+   public void shouldAnswerWithTrueAgain()
+   {
+      assertTrue( true );
+   }
 }
 
-}
